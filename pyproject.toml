@@ -3,14 +3,10 @@ name = "scraping-app"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12,<3.13"
 dependencies = [
-    "langchain>=0.3.22",
-    "langchain-openai>=0.3.12",
     "pandas>=2.2.3",
-    "prefect>=3.3.3",
     "scrapy>=2.12.0",
-    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
@@ -18,10 +14,12 @@ dev = [
     "gitpython>=3.1.44",
     "invoke>=2.2.0",
     "mypy>=1.15.0",
-    "pandas-stubs>=2.2.3.250308",
     "ruff>=0.11.3",
-    "types-tqdm>=4.67.0.20250404",
+    "pandas-stubs>=2.2.3.250308",
 ]
 
 [tool.ruff]
 line-length = 120
+
+[tool.uv.sources]
+ja-core-news-md = { url = "https://github.com/explosion/spacy-models/releases/download/ja_core_news_md-3.8.0/ja_core_news_md-3.8.0-py3-none-any.whl" }

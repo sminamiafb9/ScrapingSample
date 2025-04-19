@@ -39,4 +39,4 @@ def main(ctx):
     """メインのタスクを実行"""
     git_root = get_git_root()
     app_path = git_root / "apps"
-    ctx.run(f"cd {app_path} && python workflow.py")
+    ctx.run(f"cd {app_path} && scrapy crawl coconala")
