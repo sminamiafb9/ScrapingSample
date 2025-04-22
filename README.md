@@ -1,4 +1,4 @@
-# Scraping & Classify Sample
+# Scraping Sample
 
 ## 必要なパッケージのインストール
 
